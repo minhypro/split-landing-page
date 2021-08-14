@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+:root {
+    --left-bg-color: rgba(154, 123, 79, 0.6);
+    --right-bg-color: rgba(226, 205, 177, 0.6);
+    --btn-hover-color: rgba( 163, 130, 83, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+}
+
+* {
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    background: #333;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    text-shadow: 3px -1px #333;
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    color: aliceblue;
+    border: aliceblue solid 0.2rem;
+    width: 13rem;
+    text-align: center;
+    padding: .7rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba( 163, 130, 83, 1);
+    border-color: rgba( 163, 130, 83, 1);
+}
+
+.containter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.split.left {
+    left: 0;
+    background: url('/Split-landing-page/image/left.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s linear;
+}
+
+.split.left::before{
+    content: '';
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+.split.right {
+    right: 0;
+    background: url('/Split-landing-page/image/right.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s linear;
+}
+
+.split.right::before{
+    content: '';
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
