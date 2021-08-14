@@ -65,7 +65,7 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url('/image/left.jpg');
+    background: url('/split-landing-page/image/left.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s linear;
@@ -81,7 +81,7 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url('/image/right.jpg');
+    background: url('/split-landing-page/image/right.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s linear;
